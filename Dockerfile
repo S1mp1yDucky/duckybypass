@@ -2,7 +2,7 @@ FROM debian:sid
 
 ENV LANG C.UTF-8
 ENV USER root
-ENV HOME /cloudfail
+ENV HOME /duckbypass
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
@@ -13,6 +13,6 @@ COPY . $HOME
 
 WORKDIR $HOME
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python3", "cloudfail.py"]
+ENTRYPOINT ["python", "duckbypass.py"]
