@@ -10,3 +10,4 @@ win_inet_pton==1.0.1
 dnspython==1.15.0
 pygame==2.0.1
 getpass4==0.0.8
+pyfiglet==0.8.post1
