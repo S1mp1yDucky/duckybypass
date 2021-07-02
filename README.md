@@ -9,7 +9,8 @@ DuckyBypass is a tactical reconnaissance tool which aims to gather enough inform
 # Usage:
 **[Normal Scan]  |** `python duckbypass.py -t website.com`
 
-To run a scan against a target using Tor:
+** | T O R   S C A N | **
+
 **[Linux] |** `service tor start`
 **[Windows] |** Install vidalia or just run the Tor browser
 
