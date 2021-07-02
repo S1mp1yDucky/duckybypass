@@ -8,6 +8,13 @@ requests>=2.20.0
 urllib3==1.24.2
 win_inet_pton==1.0.1
 dnspython==1.15.0
+cPython==0.0.6
+sdl==0.0.0
+PySDL2==0.9.7
+pysdl2-dll
+pysdl2-cffi
+gym-games
+numpy
 pygame==2.0.1
 getpass4==0.0.8
 pyfiglet==0.8.post1
