@@ -272,7 +272,7 @@ logo = pyfiglet.figlet_format(" DuckBypass\n                  By \nS1mp1y Ducky\
 print(Fore.RED + Style.BRIGHT + logo + Fore.RESET)
 time.sleep(3)
 print("")
-print(Fore.GREEN + "[READ ME] | Made By S1mp1y Ducky, Do NOT steal and We take no responsibilities for your actions, Use this for peneration testing only")
+print(Fore.GREEN + "[READ ME] | Made By S1mp1y Ducky, Do Not steal and We take no responsibilities for your actions, Use this for peneration testing only")
 print("")
 print(Fore.GREEN + "[ Music ] | GTA San Andreas Theme Song (BLVCK SKYLE Trap Remix)")
 print("")
@@ -294,7 +294,7 @@ def login_acc():
     print("\n")
     if password == 'nbkHS!5bKFW*C%?bA?r3hrTCu#RX49Sn':
         time.sleep(3)
-        print_out(Fore.YELLOW + "[Logged In] | Welcome " + username)
+        print_out(Fore.YELLOW + "[Logged In] | Welcome " + username+"!")
     else:   
         print_out(Fore.YELLOW + "[Login Failed] | You have entered an Invalid Secret Code")
         time.sleep(3)
@@ -318,14 +318,14 @@ hostnamegay = socket.gethostname()
 IPAddrgay = socket.gethostbyname(gethostname())
 print_out(Fore.YELLOW + "[PROTECTION] Host Name: " + hostnamegay + "  Local IP Address: " + IPAddrgay)
 for x in range (0,5):  
-    b = Fore.YELLOW + "Initializing DuckBypass Pro | By S1mp1y Ducky" + "." * x
+    b = Fore.YELLOW + "Initializing DuckBypass Free | By S1mp1y Ducky" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
 print("")
 print("")
 print_out(Fore.YELLOW + "[ --------------------------------  R E A D Y  ------------------------------------- ]")
 print("")
-print_out(Fore.YELLOW + "[INFO] Welcome to DuckBypass Pro | By S1mp1y Ducky - the date is: " + datestr)
+print_out(Fore.YELLOW + "[INFO] Welcome to DuckBypass Free | By S1mp1y Ducky - the date is: " + datestr)
 print("")
 print_out(Fore.YELLOW + "[ ---------------------------------------------------------------------------------- ]")
 print("")
