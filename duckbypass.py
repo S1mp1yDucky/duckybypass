@@ -7,7 +7,6 @@ import sys
 import socket
 import binascii
 import datetime
-import msvcrt
 import pygame
 import getpass
 import pyfiglet
