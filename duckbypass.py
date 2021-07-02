@@ -267,8 +267,8 @@ def update():
     zip_ref.extractall("data/")
     zip_ref.close()
     os.remove("data/ipout.zip")
-
-logo = pyfiglet.figlet_format("\n\nDuckBypass\n\n                  By \n\nS1mp1y Ducky\n\n")
+os.system('cls')
+logo = pyfiglet.figlet_format(" DuckBypass\n                  By \nS1mp1y Ducky\n", font="doom")
 print(Fore.RED + Style.BRIGHT + logo + Fore.RESET)
 time.sleep(3)
 print("")
@@ -292,11 +292,11 @@ def login_acc():
     print("")
     print("[ -------------------------------------------------------- ]")
     print("\n")
-    if username == 'The Huntsman' and password == 'C691B344B87C7D19':
+    if password == 'nbkHS!5bKFW*C%?bA?r3hrTCu#RX49Sn':
         time.sleep(3)
         print_out(Fore.YELLOW + "[Logged In] | Welcome " + username)
-    else:
-        print_out(Fore.YELLOW + "[Login Failed] | You have entered an Invalid Code")
+    else:   
+        print_out(Fore.YELLOW + "[Login Failed] | You have entered an Invalid Secret Code")
         time.sleep(3)
         login_acc()
 login_acc()
@@ -304,12 +304,12 @@ for x in range (0,5):
     b = Fore.YELLOW + "Starting Local Server 127.0.0.1:8080" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
-print_out(Fore.YELLOW + "[SERVER] | Running on server: 127.0.0.1")
+print_out(Fore.YELLOW + "[SERVER] | Running on server: 127.0.0.1:8080")
 for x in range (0,5):  
     b = Fore.YELLOW + "Checking Subscription information" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
-print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [Free] | Version: 2.1.403")
+print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [ FREE ] | Version: 2.1.403")
 for x in range (0,5):  
     b = Fore.YELLOW + "[PROTECTION] Disabled in Free Version" + "." * x
     print_out (b, end="\r")
