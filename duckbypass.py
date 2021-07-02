@@ -10,6 +10,7 @@ import datetime
 import msvcrt
 import pygame
 import getpass
+import pyfiglet
 from socket import gethostname
 from colorama.ansi import clear_screen
 import socks
@@ -267,19 +268,7 @@ def update():
     zip_ref.close()
     os.remove("data/ipout.zip")
 
-logo = """\x3c
-
-
-
- ██████╗ ██╗   ██╗ ██████╗██╗  ██╗██████╗ ██╗   ██╗██████╗  █████╗ ███████╗███████╗
- ██╔══██╗██║   ██║██╔════╝██║ ██╔╝██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝
- ██║  ██║██║   ██║██║     █████╔╝ ██████╔╝ ╚████╔╝ ██████╔╝███████║███████╗███████╗
- ██║  ██║██║   ██║██║     ██╔═██╗ ██╔══██╗  ╚██╔╝  ██╔═══╝ ██╔══██║╚════██║╚════██║
- ██████╔╝╚██████╔╝╚██████╗██║  ██╗██████╔╝   ██║   ██║     ██║  ██║███████║███████║
- ╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝╚═════╝    ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
-  Cloudflare Bypass Free                                             by S1mp1y Ducky
-
-\x3e"""
+logo = pyfiglet.figlet_format("\n\nDuckBypass\n\n                  By \n\nS1mp1y Ducky\n\n")
 print(Fore.RED + Style.BRIGHT + logo + Fore.RESET)
 time.sleep(3)
 print("")
