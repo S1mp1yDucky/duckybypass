@@ -7,12 +7,9 @@ DuckyBypass is a tactical reconnaissance tool which aims to gather enough inform
 3) Bruteforce scan over 2500 subdomains.
 
 # Usage:
-**[Normal Scan]  |** `python duckbypass.py -t website.com`
-
-**| T O R   S C A N |**
-
-**[Linux]   |** `service tor start`
-**[Windows] |** Install Vidalia or just run Tor Browser
+**[ Normal Scan ]     |** `python duckbypass.py -t website.com`
+**[ TOR Scan Linux]   |** `service tor start`
+**[ TOR Scan Windows] |** Install Vidalia or just run Tor Browser
 
 **[With Tor Scan] |** `python duckbypass.py -t website.com --tor`
 
