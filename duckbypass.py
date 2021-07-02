@@ -7,6 +7,10 @@ import sys
 import socket
 import binascii
 import datetime
+import msvcrt
+import pygame
+import getpass
+from socket import gethostname
 from colorama.ansi import clear_screen
 import socks
 import requests
@@ -21,12 +25,14 @@ import dns.resolver
 
 colorama.init(Style.BRIGHT)
 
+pygame.mixer.init()
+pygame.mixer.music.load("urgay.mp3")
+pygame.mixer.music.play()
 
 def print_out(data, end='\n'):
     datetimestr = str(datetime.datetime.strftime(datetime.datetime.now(), '%H:%M:%S'))
-    print(Style.NORMAL + "[" + datetimestr + "] " + re.sub(' +', ' ', data) + Style.RESET_ALL,' ', end=end) # UR SOOO GAY
+    print(Style.NORMAL + "[" + datetimestr + "] " + re.sub(' +', ' ', data) + Style.RESET_ALL,' ', end=end)
 
-# LEARN MY CHILD LMAOAOAOAOAOA
 
 def ip_in_subnetwork(ip_address, subnetwork):
     (ip_integer, version1) = ip_to_integer(ip_address)
@@ -37,7 +43,6 @@ def ip_in_subnetwork(ip_address, subnetwork):
 
     return (ip_lower <= ip_integer <= ip_upper)
 
-# PERIODT. SIS
 
 def ip_to_integer(ip_address):
     # try parsing the IP address first as IPv4, then as IPv6
@@ -262,7 +267,7 @@ def update():
     zip_ref.close()
     os.remove("data/ipout.zip")
 
-logo = """\
+logo = """\x3c
 
 
 
@@ -272,14 +277,13 @@ logo = """\
  ██║  ██║██║   ██║██║     ██╔═██╗ ██╔══██╗  ╚██╔╝  ██╔═══╝ ██╔══██║╚════██║╚════██║
  ██████╔╝╚██████╔╝╚██████╗██║  ██╗██████╔╝   ██║   ██║     ██║  ██║███████║███████║
  ╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝╚═════╝    ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
-  [BETA] Cloudflare Bypass for skids                               by S1mp1y Ducky
+  Cloudflare Bypass Free                                             by S1mp1y Ducky
 
-"""
+\x3e"""
 print(Fore.RED + Style.BRIGHT + logo + Fore.RESET)
 time.sleep(3)
 print("")
-print(Fore.GREEN + "[READ ME] Made By S1mp1y Ducky, Do NOT steal/share and We take no responsibilities for your gay actions or whatever you do")
-print(Fore.GREEN + "          You are using the FREE version, Purchase the Premium version to ByPass CLoudflare using our secret algorithms")
+print(Fore.GREEN + "[READ ME] Made By S1mp1y Ducky, Do NOT steal and We take no responsibilities for your actions, Use this for peneration testing only")
 print("")
 print("")
 time.sleep(5)
@@ -288,10 +292,25 @@ for x in range (0,5):
     b = Fore.YELLOW + "Logging In" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
-print_out(Fore.YELLOW + "[Logged In] | Welcome The Huntsman!")
-time.sleep(3)
+
+def login_acc():
+    print("[ ------------------------- L O G I N -------------------- ]")
+    print("")
+    username = input(Fore.YELLOW + "[LOGIN] Enter your username: ")
+    password = getpass.getpass(Fore.YELLOW + "[LOGIN] Enter your Secret Code: ")
+    print("")
+    print("[ -------------------------------------------------------- ]")
+    print("\n")
+    if username == 'The Huntsman' and password == 'C691B344B87C7D19':
+        time.sleep(3)
+        print_out(Fore.YELLOW + "[Logged In] | Welcome " + username)
+    else:
+        print_out(Fore.YELLOW + "[Login Failed] | You have entered an Invalid Code")
+        time.sleep(3)
+        login_acc()
+login_acc()
 for x in range (0,5):  
-    b = Fore.YELLOW + "Starting Local Server 127.0.0.1" + "." * x
+    b = Fore.YELLOW + "Starting Local Server 127.0.0.1:8080" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
 print_out(Fore.YELLOW + "[SERVER] | Running on server: 127.0.0.1")
@@ -299,16 +318,23 @@ for x in range (0,5):
     b = Fore.YELLOW + "Checking Subscription information" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
-print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: FREE | Version: 2.1.403")
+print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [Free] | Version: 2.1.403")
 for x in range (0,5):  
-    b = Fore.YELLOW + "Initializing DuckBypass for Skids | By S1mp1y Ducky" + "." * x
+    b = Fore.YELLOW + "[PROTECTION] Disabled in Free Version" + "." * x
+    print_out (b, end="\r")
+time.sleep(5)
+hostnamegay = socket.gethostname()
+IPAddrgay = socket.gethostbyname(gethostname())
+print_out(Fore.YELLOW + "[PROTECTION] Host Name: " + hostnamegay + "  Local IP Address: " + IPAddrgay)
+for x in range (0,5):  
+    b = Fore.YELLOW + "Initializing DuckBypass Pro | By S1mp1y Ducky" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
 print("")
 print("")
 print_out(Fore.YELLOW + "[ --------------------------------  R E A D Y  ------------------------------------- ]")
 print("")
-print_out(Fore.YELLOW + "[INFO] Welcome to DuckBypass for Skids | By S1mp1y Ducky - the date is: " + datestr)
+print_out(Fore.YELLOW + "[INFO] Welcome to DuckBypass Pro | By S1mp1y Ducky - the date is: " + datestr)
 print("")
 print_out(Fore.YELLOW + "[ ---------------------------------------------------------------------------------- ]")
 print("")
