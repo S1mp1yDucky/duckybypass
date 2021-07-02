@@ -15,6 +15,6 @@ pysdl2-dll
 pysdl2-cffi
 gym-games
 numpy
-pygame==2.0.1
+pygame
 getpass4==0.0.8
 pyfiglet==0.8.post1
