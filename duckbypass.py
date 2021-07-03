@@ -25,9 +25,32 @@ import dns.resolver
 
 colorama.init(Style.BRIGHT)
 
-pygame.mixer.init()
-pygame.mixer.music.load("urgay.mp3")
-pygame.mixer.music.play()
+def system_detection():
+    print("")
+    print("")
+    print("[ ------------------------- O S  S E L E C T I O N -------------------- ]")
+    print("")
+    print("1) Windows OS")
+    print("2) Linux OS Distro")
+    print("")
+    os_selection = input(Fore.YELLOW + "[OS SELECTION] Enter your Operation System: ")
+    print("")
+    print("[ ---------------------------------------------------------------------- ]")
+    print("\n")
+    if os_selection == '1':
+        time.sleep(3)
+        print(Fore.YELLOW + "[OS Defined] | Operating System: " + os_selection)
+        time.sleep(3)
+        os.system('cls')
+        pygame.mixer.init()
+        pygame.mixer.music.load("urgay.mp3")
+        pygame.mixer.music.play()
+    else:   
+        print(Fore.YELLOW + "[OS Defined] | Operating System: Linux Distro")
+        time.sleep(3)
+        os.system('clear')
+        time.sleep(3)
+system_detection()
 
 def print_out(data, end='\n'):
     datetimestr = str(datetime.datetime.strftime(datetime.datetime.now(), '%H:%M:%S'))
@@ -271,7 +294,7 @@ logo = pyfiglet.figlet_format(" DuckBypass\n                  By \nS1mp1y Ducky\
 print(Fore.RED + Style.BRIGHT + logo + Fore.RESET)
 time.sleep(3)
 print("")
-print(Fore.GREEN + "[READ ME] | Made By S1mp1y Ducky, Do Not steal and We take no responsibilities for your actions, Use this for peneration testing only")
+print(Fore.GREEN + "[READ ME] | Made By S1mp1y Ducky, Do NOT steal and We take no responsibilities for your actions, Use this for peneration testing only")
 print("")
 print(Fore.GREEN + "[ Music ] | GTA San Andreas Theme Song (BLVCK SKYLE Trap Remix)")
 print("")
@@ -308,7 +331,7 @@ for x in range (0,5):
     b = Fore.YELLOW + "Checking Subscription information" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
-print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [ FREE ] | Version: 1.1.403")
+print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [PREMIUM] - Lifetime | Version: 1.1.403")
 for x in range (0,5):  
     b = Fore.YELLOW + "[PROTECTION] Disabled in Free Version" + "." * x
     print_out (b, end="\r")
@@ -317,14 +340,14 @@ hostnamegay = socket.gethostname()
 IPAddrgay = socket.gethostbyname(gethostname())
 print_out(Fore.YELLOW + "[PROTECTION] Host Name: " + hostnamegay + "  Local IP Address: " + IPAddrgay)
 for x in range (0,5):  
-    b = Fore.YELLOW + "Initializing DuckBypass Free | By S1mp1y Ducky" + "." * x
+    b = Fore.YELLOW + "Initializing DuckBypass Pro | By S1mp1y Ducky" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
 print("")
 print("")
 print_out(Fore.YELLOW + "[ --------------------------------  R E A D Y  ------------------------------------- ]")
 print("")
-print_out(Fore.YELLOW + "[INFO] Welcome to DuckBypass Free | By S1mp1y Ducky - the date is: " + datestr)
+print_out(Fore.YELLOW + "[INFO] Welcome to DuckBypass Pro | By S1mp1y Ducky - the date is: " + datestr)
 print("")
 print_out(Fore.YELLOW + "[ ---------------------------------------------------------------------------------- ]")
 print("")
