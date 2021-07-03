@@ -7,7 +7,6 @@ import sys
 import socket
 import binascii
 import datetime
-import pygame
 import getpass
 import pyfiglet
 from socket import gethostname
@@ -39,6 +38,7 @@ def system_detection():
     os_selection = input(Fore.YELLOW + "[OS SELECTION] Enter your Operation System: ")
     print("\n\n")
     if os_selection == '1':
+        import pygame
         time.sleep(3)
         print(Fore.YELLOW + "[OS Defined] | Operating System: Windows OS")
         time.sleep(3)
@@ -47,6 +47,7 @@ def system_detection():
         pygame.mixer.music.load("notmusicistg.wav")
         pygame.mixer.music.play()
     elif os_selection == '2':
+        import pygame
         print(Fore.YELLOW + "[OS Defined] | Operating System: Linux Distro")
         time.sleep(3)
         os.system('clear')
