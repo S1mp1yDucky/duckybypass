@@ -341,7 +341,7 @@ for x in range (0,5):
     b = Fore.YELLOW + "Checking Subscription information" + "." * x
     print_out (b, end="\r")
 time.sleep(5)
-print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [PREMIUM] - Lifetime | Version: 1.1.403")
+print_out(Fore.YELLOW + "[SUBSCRIPTION] Subscription: [FREE] | Version: 1.1.403")
 for x in range (0,5):  
     b = Fore.YELLOW + "[PROTECTION] Disabled in Free Version" + "." * x
     print_out (b, end="\r")
