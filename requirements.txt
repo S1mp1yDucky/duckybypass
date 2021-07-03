@@ -16,5 +16,6 @@ pysdl2-cffi
 gym-games
 numpy
 pygame
+win_inet_pton
 getpass4==0.0.8
 pyfiglet==0.8.post1
